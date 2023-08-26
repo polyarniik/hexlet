@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "brain_games"
+version = "0.1.0"
+description = "BrainGames"
+authors = ["Safiullin Ruslan <rus.safiullin.01@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^6.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+brain-calculator = 'brain_games.calculator:play_calculator_game'
+brain-gcd = 'brain_games.gcd:play_gcd_game'
+brain-is_even = 'brain_games.is_even:play_even_odd_game'
+brain-is_prime = 'brain_games.is_prime:play_prime_game'
+brain-progression = 'brain_games.progression:play_progression_game'
